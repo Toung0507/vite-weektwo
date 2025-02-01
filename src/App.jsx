@@ -128,10 +128,11 @@ function App() {
                                         <div className="d-flex flex-wrap">
                                             {tempProduct.imagesUrl?.map((item, index) => (
                                                 <img
+                                                    key={index}
                                                     data-id={index}
                                                     src={item}
                                                     className="images"
-                                                    alt="主圖"
+                                                    alt="更多圖片"
                                                     style={{ objectFit: "cover", maxWidth: "300px" }}
                                                 />
                                             ))}
